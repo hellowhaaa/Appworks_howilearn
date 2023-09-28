@@ -36,34 +36,36 @@
     <div class="container">
         <div class="row">
             <div class="col">
-
-                <div class="feature-img">
-                    <img src="./img/筆記.jpg" width='100%' alt="">
+                <div class="feature-img play-btn-image">
+                    <img src="./img/筆記.jpg" width='100%' onclick="playVideo('./img/程式學習進度、筆記.mp4')">
+                    <p>觀看影片了解如何使用Notion查看 <span>筆記</span></p>
                     <img src="img/button-icon-png-21060.png " class="play-btn"
-                        onclick="playVideo('./img/程式學習進度、筆記 - .mp4')">
+                        onclick="playVideo('./img/程式學習進度、筆記.mp4')">
                 </div>
             </div>
             <div class="col">
                 <div class="col-content">
-                    <h2 class="word">筆記和心得</h2>
-                    <input type="button" value="前往 Notion"
-                        onclick="location.href='https://nasal-tracker-0f4.notion.site/a6860d73fd234033b3a486f87dce81ec?v=7145897e08d6414ab1e9cf170b9a3228'">
+                    <p class="note">前往Notion查看 筆記</p>
+                    <a
+                        href=https://nasal-tracker-0f4.notion.site/a6860d73fd234033b3a486f87dce81ec?v=7145897e08d6414ab1e9cf170b9a3228">GO
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class=" row">
             <div class="col">
                 <div class="col-content">
-                    <h2 class="word">筆記和心得</h2>
-                    <input type="button" value="前往 Notion" class="btn"
-                        onclick="location.href='https://nasal-tracker-0f4.notion.site/a6860d73fd234033b3a486f87dce81ec?v=7145897e08d6414ab1e9cf170b9a3228'">
+                    <p class="note">前往 Notion 行事曆</p>
+                    <a href=https://nasal-tracker-0f4.notion.site/e159e0b6519148ae96b2a721951b220a">GO
+                    </a>
                 </div>
             </div>
             <div class="col">
-                <div class="feature-img">
-                    <img src="./img/行事曆.jpg" width='100%' alt="">
-                    <img src="img/button-icon-png-21060.png " class="play-btn" alt="">
+                <div class="feature-img play-btn-image">
+                    <img src="./img/行事曆.jpg" width='100%' onclick="playVideo('./img/程式學習進度、筆記.mp4')">
+                    <p>觀看影片了解如何使用Notion查看 <span>行事曆</span></p>
+                    <img src="img/button-icon-png-21060.png " class="play-btn" onclick="playVideo('./img/行事曆.mp4')">
                 </div>
 
             </div>
@@ -74,7 +76,14 @@
 
     <div class="video-player" id="videoplayer">
         <video width="100%" controls autoplay id="myvideo">
-            <source src="./img/程式學習進度、筆記 - .mp4" type="video/mp4">
+            <source src="./img/程式學習進度、筆記.mp4" type="video/mp4">
+        </video>
+        <img src="./img/close-button-png-30230.png" class="close-btn" onclick="stopVideo()">
+
+    </div>
+    <div class="video-player" id="videoplayer">
+        <video width="100%" controls autoplay id="myvideo">
+            <source src="./img/行事曆.mp4" type="video/mp4">
         </video>
         <img src="./img/close-button-png-30230.png" class="close-btn" onclick="stopVideo()">
 
