@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I learn</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <a class="home" href="#"> <i class="fa-solid fa-house-chimney"></i></a>
+            <div class="list-item">
+                <span><a href="#">About me</a></span>
+                <span><a href="#">Project</a></span>
+                <span><a href="#">How I learn</a></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="background">
+            <img class="bg" src="./img/white.jpg" alt="">
+
+        </div>
+        <div class="header">
+            <h2>How <br> I <br>learn</h2>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div class="feature-img">
+                    <img src="./img/筆記.jpg" width='100%' alt="">
+                    <img src="img/button-icon-png-21060.png " class="play-btn"
+                        onclick="playVideo('./img/程式學習進度、筆記 - .mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-content">
+                    <h2 class="word">筆記和心得</h2>
+                    <input type="button" value="前往 Notion"
+                        onclick="location.href='https://nasal-tracker-0f4.notion.site/a6860d73fd234033b3a486f87dce81ec?v=7145897e08d6414ab1e9cf170b9a3228'">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="col-content">
+                    <h2 class="word">筆記和心得</h2>
+                    <input type="button" value="前往 Notion" class="btn"
+                        onclick="location.href='https://nasal-tracker-0f4.notion.site/a6860d73fd234033b3a486f87dce81ec?v=7145897e08d6414ab1e9cf170b9a3228'">
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature-img">
+                    <img src="./img/行事曆.jpg" width='100%' alt="">
+                    <img src="img/button-icon-png-21060.png " class="play-btn" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="video-player" id="videoplayer">
+        <video width="100%" controls autoplay id="myvideo">
+            <source src="./img/程式學習進度、筆記 - .mp4" type="video/mp4">
+        </video>
+        <img src="./img/close-button-png-30230.png" class="close-btn" onclick="stopVideo()">
+
+    </div>
+
+    <script>
+        var videoPlayer = document.getElementById("videoplayer");
+        var myVideo = document.getElementById("myvideo");
+
+        function stopVideo() {
+            videoPlayer.style.display = 'none';
+            myVideo.volume = 0;
+
+        }
+        function playVideo(file) {
+            myVideo.src = file;
+            videoPlayer.style.display = 'block';
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
