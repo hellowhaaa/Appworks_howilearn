@@ -201,7 +201,7 @@ table {
     }
 
     &:active {
-        background-color: yellow;
+        color: rgb(163, 163, 163);
 
     }
 
@@ -271,7 +271,9 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+
 }
+
 
 .col a {
     position: relative;
@@ -323,6 +325,7 @@ nav {
 }
 
 
+
 .note {
     font-size: 30px;
     letter-spacing: 3px;
@@ -353,6 +356,8 @@ video {
     right: 10px;
     width: 50px;
     cursor: pointer;
+
+
 }
 
 .play-btn-image {
