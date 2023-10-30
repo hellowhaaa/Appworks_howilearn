@@ -245,6 +245,10 @@ nav {
     overflow: hidden;
 }
 
+
+
+
+
 .feature-img p {
     margin-top: 30px;
     font-size: 15px;
@@ -324,7 +328,11 @@ nav {
     color: white;
 }
 
+.col .btn-stancode {
+    position: relative;
+    left: 200px;
 
+}
 
 .note {
     font-size: 30px;
@@ -335,6 +343,8 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
+
 
 /* ------------video----------- */
 .video-player {

@@ -70,41 +70,58 @@
                 </div>
 
             </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img play-btn-image">
+
+                    <img src="./img/a1_批改影片(範例).jpg" width='100%'">
+                    
+                    <p>批改stanCode進階班作業過程 (請勿分享)</p>
+                </div>
+            </div>
+            <div class=" col">
+                    <div class="col-content">
+                        <p class="note">前往Google Drive查看 影片</p>
+                        <a class="btn-stancode"
+                            href=https://drive.google.com/drive/folders/1F_o9ZFLoZ6XqmRJm3lcuxiLlkjLoMxST?usp=sharing">GO
+                        </a>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-    </div>
+        <div class="video-player" id="videoplayer">
+            <video width="100%" controls autoplay id="myvideo">
+                <source src="./img/程式學習進度、筆記.mp4" type="video/mp4">
+            </video>
+            <img src="./img/close-button-png-30230.png" class="close-btn" onclick="stopVideo()">
 
-    <div class="video-player" id="videoplayer">
-        <video width="100%" controls autoplay id="myvideo">
-            <source src="./img/程式學習進度、筆記.mp4" type="video/mp4">
-        </video>
-        <img src="./img/close-button-png-30230.png" class="close-btn" onclick="stopVideo()">
+        </div>
+        <div class="video-player" id="videoplayer">
+            <video width="100%" controls autoplay id="myvideo">
+                <source src="./img/行事曆.mp4" type="video/mp4">
+            </video>
+            <img src="./img/close-button-png-30230.png" class="close-btn" onclick="stopVideo()">
 
-    </div>
-    <div class="video-player" id="videoplayer">
-        <video width="100%" controls autoplay id="myvideo">
-            <source src="./img/行事曆.mp4" type="video/mp4">
-        </video>
-        <img src="./img/close-button-png-30230.png" class="close-btn" onclick="stopVideo()">
+        </div>
 
-    </div>
+        <script>
+            var videoPlayer = document.getElementById("videoplayer");
+            var myVideo = document.getElementById("myvideo");
 
-    <script>
-        var videoPlayer = document.getElementById("videoplayer");
-        var myVideo = document.getElementById("myvideo");
+            function stopVideo() {
+                videoPlayer.style.display = 'none';
 
-        function stopVideo() {
-            videoPlayer.style.display = 'none';
+            }
+            function playVideo(file) {
+                myVideo.src = file;
+                videoPlayer.style.display = 'block';
 
-        }
-        function playVideo(file) {
-            myVideo.src = file;
-            videoPlayer.style.display = 'block';
+            }
 
-        }
-
-    </script>
+        </script>
 
 
 </body>
